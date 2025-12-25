@@ -13,7 +13,8 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>My Applications - TrendHire</title>
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css?v=<%= System.currentTimeMillis() %>">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet-coral.css?v=<%= System.currentTimeMillis() %>">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0008de2df6.js" crossorigin="anonymous"></script>
     <style>
@@ -31,15 +32,15 @@
             padding: 6px 12px;
             border-radius: 20px;
         }
-        .status-applied { background-color: #17a2b8; color: white; }
-        .status-under-review { background-color: #ffc107; color: #000; }
-        .status-shortlisted { background-color: #28a745; color: white; }
-        .status-interview-scheduled { background-color: #6f42c1; color: white; }
-        .status-selected { background-color: #198754; color: white; }
+        .status-applied { background-color: #ff4153; color: white; }
+        .status-under-review { background-color: #ff4153; color: #000; }
+        .status-shortlisted { background-color: #ff4153; color: white; }
+        .status-interview-scheduled { background-color: #ff4153; color: white; }
+        .status-selected { background-color: #ff4153; color: white; }
         .status-rejected { background-color: #dc3545; color: white; }
-        .status-withdrawn { background-color: #6c757d; color: white; }
+        .status-withdrawn { background-color: #ff4153; color: white; }
         .stats-card {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #ff4153 0%, #764ba2 100%);
             color: white;
             padding: 20px;
             border-radius: 10px;
@@ -53,8 +54,8 @@
             object-fit: cover;
         }
         .interview-details {
-            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
-            border-left: 4px solid #2196f3;
+            background: linear-gradient(135deg, #e3f2fd 0%, #ff4153 100%);
+            border-left: 4px solid #ff4153;
             padding: 20px;
             margin: 15px 0;
             border-radius: 0 8px 8px 0;
@@ -68,7 +69,7 @@
         .interview-info-item i {
             width: 20px;
             margin-right: 8px;
-            color: #1976d2;
+            color: #ff4153;
         }
     </style>
 </head>
@@ -205,6 +206,16 @@
                                 <i class="fas fa-times-circle"></i> Rejected
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link <%= filterStatus.equals("Interview Scheduled") ? "active" : "" %>" href="?status=Interview Scheduled">
+                                <i class="fas fa-calendar-alt"></i> Interview
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link <%= filterStatus.equals("Selected") ? "active" : "" %>" href="?status=Selected">
+                                <i class="fas fa-star"></i> Selected
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
@@ -229,6 +240,8 @@
                                     query += " AND a.status = 'Accepted'";
                                 } else if (filterStatus.equals("Rejected")) {
                                     query += " AND a.status = 'Rejected'";
+                                } else if (filterStatus.equals("Interview Scheduled")) {
+                                    query += " AND a.status = 'Interview Scheduled'";
                                 }
                             }
                             
@@ -559,9 +572,8 @@
     </script>
 </body>
 </html>
-
 <%
     } else {
-        response.sendRedirect("seekerLogin.jsp?error=2");
+        response.sendRedirect("seekerLogin.jsp");
     }
 %>

@@ -17,7 +17,8 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Manage Applications - TrendHire</title>
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css?v=<%= System.currentTimeMillis() %>">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet-coral.css?v=<%= System.currentTimeMillis() %>">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0008de2df6.js" crossorigin="anonymous"></script>
     <style>
@@ -34,11 +35,11 @@
             font-size: 0.8rem;
             padding: 4px 8px;
         }
-        .status-applied { background-color: #17a2b8; }
-        .status-under-review { background-color: #ffc107; color: #000; }
-        .status-shortlisted { background-color: #28a745; }
-        .status-interview-scheduled { background-color: #6f42c1; }
-        .status-selected { background-color: #198754; }
+        .status-applied { background-color: #ff4153; }
+        .status-under-review { background-color: #ff4153; color: #000; }
+        .status-shortlisted { background-color: #ff4153; }
+        .status-interview-scheduled { background-color: #ff4153; }
+        .status-selected { background-color: #ff4153; }
         .status-rejected { background-color: #dc3545; }
         .action-buttons .btn {
             margin: 2px;
@@ -112,6 +113,11 @@
                                 <i class="fas fa-times-circle"></i> Rejected
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link <%= filterStatus.equals("Under Review") ? "active" : "" %>" href="?status=Under Review">
+                                <i class="fas fa-search"></i> Under Review
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
@@ -136,6 +142,8 @@
                                     query += " AND a.status = 'Accepted'";
                                 } else if (filterStatus.equals("Rejected")) {
                                     query += " AND a.status = 'Rejected'";
+                                } else if (filterStatus.equals("Under Review")) {
+                                    query += " AND a.status = 'Under Review'";
                                 }
                             }
                             

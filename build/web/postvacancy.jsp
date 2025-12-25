@@ -11,7 +11,8 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Post New Job - GrumJobs</title>
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css?v=<%= System.currentTimeMillis() %>">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet-coral.css?v=<%= System.currentTimeMillis() %>">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/0008de2df6.js" crossorigin="anonymous"></script>
@@ -19,7 +20,7 @@
         .skill-input { margin-bottom: 10px; }
         .skill-tag { 
             display: inline-block; 
-            background: #007bff; 
+            background: #ff4153; 
             color: white; 
             padding: 5px 10px; 
             margin: 2px; 
@@ -36,10 +37,10 @@
             padding: 20px;
             margin: 15px 0;
             border-radius: 8px;
-            border-left: 4px solid #007bff;
+            border-left: 4px solid #ff4153;
         }
         .section-title {
-            color: #007bff;
+            color: #ff4153;
             font-weight: bold;
             margin-bottom: 15px;
         }

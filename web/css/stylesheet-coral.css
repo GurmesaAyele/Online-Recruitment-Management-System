@@ -1,0 +1,142 @@
+/* ==== CORAL RED STYLESHEET - FORCE NEW COLORS ==== */
+/* This is a fresh CSS file to bypass browser caching and ensure coral red #ff4153 is applied */
+
+/* Import the original stylesheet content but override all colors */
+@import url('stylesheet.css');
+
+/* ==== FORCE CORAL RED COLOR OVERRIDE - HIGHEST PRIORITY ==== */
+/* Override ALL button colors with coral red #ff4153 */
+
+.btn, .btn-primary, .btn-success, .btn-info, .btn-warning, .btn-secondary, .btn-light,
+input[type="submit"], input[type="button"], button[type="submit"],
+.action-buttons .btn, .modal-footer .btn {
+    background-color: #ff4153 !important;
+    border-color: #ff4153 !important;
+    color: white !important;
+}
+
+.btn:hover, .btn-primary:hover, .btn-success:hover, .btn-info:hover, .btn-warning:hover, .btn-secondary:hover, .btn-light:hover,
+input[type="submit"]:hover, input[type="button"]:hover, button[type="submit"]:hover,
+.action-buttons .btn:hover, .modal-footer .btn:hover {
+    background-color: #e63946 !important;
+    border-color: #e63946 !important;
+    color: white !important;
+}
+
+/* Outline buttons */
+.btn-outline-primary, .btn-outline-success, .btn-outline-info, .btn-outline-warning, .btn-outline-secondary {
+    color: #ff4153 !important;
+    border-color: #ff4153 !important;
+    background-color: transparent !important;
+}
+
+.btn-outline-primary:hover, .btn-outline-success:hover, .btn-outline-info:hover, .btn-outline-warning:hover, .btn-outline-secondary:hover {
+    background-color: #ff4153 !important;
+    border-color: #ff4153 !important;
+    color: white !important;
+}
+
+/* Navigation pills/tabs */
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: #ff4153 !important;
+    color: white !important;
+}
+
+.nav-pills .nav-link {
+    color: #ff4153 !important;
+}
+
+.nav-pills .nav-link:hover {
+    background-color: #ff4153 !important;
+    color: white !important;
+}
+
+/* Status badges */
+.status-badge, .badge {
+    background-color: #ff4153 !important;
+    color: white !important;
+}
+
+/* Small buttons */
+.btn-sm {
+    background-color: #ff4153 !important;
+    border-color: #ff4153 !important;
+    color: white !important;
+}
+
+.btn-sm:hover {
+    background-color: #e63946 !important;
+    border-color: #e63946 !important;
+    color: white !important;
+}
+
+/* Danger buttons (keep red for rejection/delete actions) */
+.btn-danger {
+    background-color: #dc3545 !important;
+    border-color: #dc3545 !important;
+    color: white !important;
+}
+
+.btn-danger:hover {
+    background-color: #c82333 !important;
+    border-color: #c82333 !important;
+    color: white !important;
+}
+
+/* Maximum specificity overrides */
+* .btn, html .btn, body .btn, .container .btn, .container-fluid .btn {
+    background-color: #ff4153 !important;
+    border-color: #ff4153 !important;
+    color: white !important;
+}
+
+* .btn:hover, html .btn:hover, body .btn:hover, .container .btn:hover, .container-fluid .btn:hover {
+    background-color: #e63946 !important;
+    border-color: #e63946 !important;
+    color: white !important;
+}
+
+/* Force override Bootstrap defaults */
+.btn-primary, .btn-success, .btn-info, .btn-warning, .btn-secondary {
+    background-color: #ff4153 !important;
+    border-color: #ff4153 !important;
+    color: white !important;
+}
+
+.btn-primary:hover, .btn-success:hover, .btn-info:hover, .btn-warning:hover, .btn-secondary:hover {
+    background-color: #e63946 !important;
+    border-color: #e63946 !important;
+    color: white !important;
+}
+
+/* Application filter buttons */
+.nav-pills .nav-item .nav-link {
+    color: #ff4153 !important;
+    border: 1px solid transparent !important;
+}
+
+.nav-pills .nav-item .nav-link:hover {
+    background-color: #ff4153 !important;
+    color: white !important;
+}
+
+.nav-pills .nav-item .nav-link.active {
+    background-color: #ff4153 !important;
+    color: white !important;
+}
+
+/* Action buttons in management pages */
+.action-buttons .btn {
+    background-color: #ff4153 !important;
+    border-color: #ff4153 !important;
+    color: white !important;
+    margin: 2px !important;
+    padding: 4px 8px !important;
+    font-size: 0.8rem !important;
+}
+
+.action-buttons .btn:hover {
+    background-color: #e63946 !important;
+    border-color: #e63946 !important;
+    color: white !important;
+}

@@ -17,7 +17,7 @@
         <title>Admin User</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Admin User</title>
-        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css?v=<%= System.currentTimeMillis() %>">
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/admin.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/0008de2df6.js" crossorigin="anonymous"></script>
