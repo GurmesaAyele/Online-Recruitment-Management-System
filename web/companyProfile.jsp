@@ -155,23 +155,6 @@
                             <div class="pb-5">
                                 <h3>Company Information
                                     <span class="float-end fx-top" style="margin-left: 10px;">
-                                        <a href="postvacancy.jsp" class="btn btn-success me-2">
-                                            <i class="fa fa-plus me-2" aria-hidden="true"></i> Post New Job
-                                        </a>
-                                        <a href="manageApplications.jsp" class="btn btn-primary">
-                                            <i class="fa fa-users me-2" aria-hidden="true"></i> Applications
-                                        </a>
-                                    </span>
-                                    <span class="float-end fx-top" style="margin-left: 10px;">
-                                        <a href="manageApplications.jsp" class="btn btn-primary">
-                                            <i class="fa fa-users me-2" aria-hidden="true"></i> Applications
-                                        </a>
-                                    </span>
-                                    <span class="float-end fx-top" style="margin-left: 10px;">
-                                        <a href="postvacancy.jsp" class="btn btn-danger">
-                                            <i class="fa fa-edit me-2" aria-hidden="true"></i> Create New Vacancy
-                                        </a>
-                                    </span>
                                     <span class="float-end fx-top">
                                         <a href="editCompany.jsp" class="btn btn-warning">
                                             <i class="fa fa-edit me-2" aria-hidden="true"></i> Edit Information

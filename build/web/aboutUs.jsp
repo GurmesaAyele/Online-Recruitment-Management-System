@@ -174,7 +174,7 @@
                 <div class="col">
                     <!-- Card-->
                     <div class="card shadow-sm border-0 rounded">
-                        <div class="card-body p-0"><img src="images/AboutUs/grum.jpg System.currentTimeMillis() %>" alt="" class="w-100 card-img-top">
+                        <div class="card-body p-0"><img src="images/AboutUs/grum.jpg?v=<%= System.currentTimeMillis() %>" alt="" class="w-100 card-img-top">
                             <div class="p-4">
                                 <h5 class="mb-0" >Gurmesa Ayele</h5>
                                 <p class="small text-muted">Full Stack Developer and Fluter Developer</p>
@@ -187,7 +187,7 @@
                 <div class="col">
                     <!-- Card-->
                     <div class="card shadow-sm border-0 rounded">
-                        <div class="card-body p-0"><img src="images/AboutUs/sam.jpg System.currentTimeMillis() %>" alt="" class="w-100 card-img-top">
+                        <div class="card-body p-0"><img src="images/AboutUs/sam.jpg?v=<%= System.currentTimeMillis() %>" alt="" class="w-100 card-img-top">
                             <div class="p-4">
                                 <h5 class="mb-0">Samuel Tefera</h5>
                                 <p class="small text-muted">Backend Engineer and Python Developer</p>
@@ -200,7 +200,7 @@
                 <div class="col">
                     <!-- Card-->
                     <div class="card shadow-sm border-0 rounded">
-                        <div class="card-body p-0"><img src="images/AboutUs/kira.jpg System.currentTimeMillis() %>" alt="" class="w-100 card-img-top">
+                        <div class="card-body p-0"><img src="images/AboutUs/kira.jpg?v=<%= System.currentTimeMillis() %>" alt="" class="w-100 card-img-top">
                             <div class="p-4">
                                 <h5 class="mb-0">Kirubel Wondewossen</h5>
                                 <p class="small text-muted">Full Stack Developer and UX/UI Designer</p>
@@ -213,7 +213,7 @@
                 <div class="col">
                     <!-- Card-->
                     <div class="card shadow-sm border-0 rounded">
-                        <div class="card-body p-0"><img src="images/AboutUs/roba.jpg System.currentTimeMillis() %>" alt="" class="w-100 card-img-top">
+                        <div class="card-body p-0"><img src="images/AboutUs/roba.jpg?v=<%= System.currentTimeMillis() %>" alt="" class="w-100 card-img-top">
                             <div class="p-4">
                                 <h5 class="mb-0">Robsen Gelana</h5>
                                 <p class="small text-muted">Data analytics and Business Intelligence Specialist</p>
@@ -226,7 +226,7 @@
                 <div class="col">
                     <!-- Card-->
                     <div class="card shadow-sm border-0 rounded">
-                        <div class="card-body p-0"><img src="images/AboutUs/akal.jpg System.currentTimeMillis() %>" alt="" class="w-100 card-img-top">
+                        <div class="card-body p-0"><img src="images/AboutUs/akal.jpg?v=<%= System.currentTimeMillis() %>" alt="" class="w-100 card-img-top">
                             <div class="p-4">
                                 <h5 class="mb-0">Samuel Birhanu</h5>
                                 <p class="small text-muted">Full Stack Developer</p>

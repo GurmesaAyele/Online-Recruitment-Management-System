@@ -17,6 +17,10 @@
     response.setContentType("text/html;charset=UTF-8");
     try {
         Connection connection = DBConnector.getCon();
+        if (connection == null) {
+            response.sendRedirect("../adminLogin.jsp?error=db");
+            return;
+        }
         String query;
         query = "SELECT * FROM admin WHERE adUsername = ?;";
        try{

@@ -109,10 +109,10 @@
                     <a href="userprofile.jsp" class="btn btn-outline-primary">
                         <i class="fas fa-user"></i> My Profile
                     </a>
-                    <a href="vacancies.jsp" class="btn btn-outline-success"></a>
+                    <a href="vacancies.jsp" class="btn btn-outline-success">
                         <i class="fas fa-search"></i> Browse Jobs
                     </a>
-                    <a href="userApplication.jsp" class="btn btn-primary"></a>
+                    <a href="userApplication.jsp" class="btn btn-primary">
                         <i class="fas fa-file-alt"></i> My Applications
                     </a>
                 </div>
@@ -564,4 +564,4 @@
     } else {
         response.sendRedirect("seekerLogin.jsp?error=2");
     }
-%></div>i></div></li>""
+%>

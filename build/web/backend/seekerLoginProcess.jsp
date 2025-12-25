@@ -17,6 +17,10 @@
     
     try {
         Connection connection = DBConnector.getCon();
+        if (connection == null) {
+            response.sendRedirect("../seekerLogin.jsp?error=db");
+            return;
+        }
         String query;
         query = "SELECT * FROM seeker WHERE seekerUName = ?;";
        try{
